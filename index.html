@@ -1,19 +1,19 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
     <meta charset="utf-8">
     <title>Luca BRUNO CV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Crazy developer, student at Ynov Bordeaux!">
     <meta name="keywords" content="HTML,CSS,JavaScript,C,Python,CV,developer">
     <meta name="author" content="Luca `Khaelo` Bruno">
     <meta name="robots" content="all">
     <!-- styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style-single-page.css" rel="stylesheet">
-    <link href="font/css/fontello.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font/css/fontello.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Add jQuery library -->
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
     <!-- Add fancyBox main JS and CSS files -->
@@ -39,7 +39,7 @@
     <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#profile"><img src="img/user.jpg"/></a>
+        <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href=".."><img src="img/user.jpg"/></a>
           <ul class="nav nav-collapse pull-right">
             <li><a href="#profile"><i class="icon-user"></i> Profile</a></li>
             <li><a href="#skills"><i class="icon-trophy"></i> Skills</a></li>
@@ -58,10 +58,10 @@
       <div id="profile" class="container">
         <div class="span3"> <img src="img/mini.png"> </div>
         <div class="span5">
-          <h1>Juan Dela Cruz</h1>
-          <h3>Web &amp; Graphics Designer</h3>
-          <p> Hello I am Juan Dela Cruz Web and Graphics Designer from Philipines. If yopu have something to be done just call my name and I will be there. :-) </p>
-          <a href="#" class="hire-me"><i class="icon-paper-plane"></i> Hire Me </a>
+          <h1>Bruno Luca</h1>
+          <h3>Etudiant en programmation</h3>
+          <p> Bonjour je m'appelle Luca Bruno, j'ai 20 ans, je suis passionné d'informatique, j'ai commencé mes études en 2018 chez Ynov Informatique à Bordeaux. </p>
+          <a href="##myModal" role="button" data-toggle="modal" class="hire-me"><i class="icon-paper-plane"></i>Me Contacter</a>
           <div class="row social">
             <ul class="social-icons">
               <li><a href="#" target="_blank"><img src="img/fb.png" alt="facebook"></a></li>
@@ -151,7 +151,6 @@
             <div><a class="fancybox-thumb" rel="fancybox-thumb" href="img/6.jpg"><img src="img/6-thumb.jpg" /></a></div>
           </li>
         </ul>
-        <!--Dummy images by The Fox And King :: http://dribbble.com/snootyfox-->
       </div>
       <!--END: Work container-->
       <!-- Resume container -->
@@ -179,7 +178,7 @@
     <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <p class="pull-left"><a href="https://khaelo.github.io/CV_Khaelo/">https://khaelo.github.io/CV_Khaelo/</a></p>
+        <p class="pull-left"><a href="https://khaelo.000webhostapp.com/">Bruno Lúca</a></p>
         <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
       </div>
     </div>
@@ -188,11 +187,11 @@
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+        <h3 id="myModalLabel"><i class="icon-mail"></i> Me Contacter</h3>
       </div>
       <div class="modal-body">
         <form>
-          <input type="text" placeholder="Yopur Name">
+          <input type="text" placeholder="Your Name">
           <input type="text" placeholder="Your Email">
           <input type="text" placeholder="Website (Optional)">
           <textarea rows="3" style="width:80%"></textarea>

@@ -1,0 +1,4 @@
+AddType text/css .css
+RewriteEngine On
+RewriteRule ^\.html$ /index.html [L]
+RewriteRule ^\.php$ /index.php [L]
