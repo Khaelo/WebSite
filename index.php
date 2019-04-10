@@ -60,7 +60,7 @@
         <div class="span5">
           <h1>Bruno Luca</h1>
           <h3>Etudiant en programmation</h3>
-          <p> Bonjour je m'appelle Luca Bruno, j'ai 20 ans, je suis passionné d'informatique, j'ai commencé mes études en 2018 chez Ynov Informatique à Bordeaux. </p>
+          <p> Bonjour je m'appelle Luca Bruno, j'ai <?php include ('info.php'); echo $mon_age; ?> ans, je suis passionné d'informatique, j'ai commencé mes études en 2018 chez Ynov Informatique à Bordeaux. </p>
           <a href="##myModal" role="button" data-toggle="modal" class="hire-me"><i class="icon-paper-plane"></i>Me Contacter</a>
           <div class="row social">
             <ul class="social-icons">
