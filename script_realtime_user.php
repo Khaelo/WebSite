@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=127.0.0.1; dbname=cvweb', 'khaelo', 'Aspire@24');
+$bdd = new PDO('mysql:host=127.0.0.1; dbname=', '', '');
 
 $session_time = 15;
 $actual_time = date("U");
