@@ -1035,7 +1035,7 @@ textarea {
 	height: auto;
 }
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	background-color: #ddf3df;
+	background-color: #d0e9c6;
 	border: 0;
  -webkit-transition: background-color linear .2s;
  -moz-transition: background-color linear .2s;
@@ -5485,4 +5485,13 @@ ul.work-images li div {
  height: auto !important;
  overflow: visible !important;
 }
+}
+
+.login-body {
+	position: relative;
+	overflow-y: auto;
+	max-height: 400px;
+	padding: 15px;
+	text-align: center;
+	color: #2f96b4;
 }
