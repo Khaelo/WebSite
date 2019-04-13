@@ -1,3 +1,4 @@
+<?php include ("script_realtime_user.php"); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -157,8 +158,8 @@
       <div id="resume" class="container">
         <h2>My Resume</h2>
         <h3>You can download my resume for your reference and I hope that we will meet very soon! :)</h3>
-        <div class="btn-center"> <a href="#" class="hire-me"><i class="icon-download"></i> Download Resume</a>
-          <h2>125kb</h2>
+        <div class="btn-center"> <a href="/CV_BRUNO_Luca.pdf" target="_blank" class="hire-me"><i class="icon-download"></i> Download Resume</a>
+          <h2>210Ko</h2>
         </div>
       </div>
       <!--END: Resume container-->
@@ -178,8 +179,9 @@
     <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <p class="pull-left"><a href="https://khaelo.000webhostapp.com/">Bruno Lúca</a></p>
-        <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+          <p class="pull-left"><a href="https://khaelo.000webhostapp.com/">Bruno Lúca</a></p>
+          <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+          <p class="text-center" id="realtime">Actuellement il y a <?php echo $user_nbr; ?> utilisateur<?php if($user_nbr != 1) {echo "s";} ?> sur le site.</p>
       </div>
     </div>
     <!-- Contact form in Modal -->
@@ -202,14 +204,18 @@
           <input type="submit" class="btn btn-large" value="Submit" name="sendmail"/>
         </form>
           <?php
-          if(isset($msg))
-          {
+          if(isset($msg)) {
               echo $msg;
           }
           ?>
       </div>
     </div>
     <!-- Scripts -->
+    <script>
+        setInterval(function () {
+            $('#realtime').load('script_realtime_user.php');
+        }, 2500);
+    </script>
     <script src="js/vertical-scroll.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
