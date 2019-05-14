@@ -11,4 +11,6 @@ function Age($date_naissance)
 }
 $ma_date_de_naissance = '27/08/1998';
 $mon_age = Age($ma_date_de_naissance);
+
+//Skills
 ?>
