@@ -75,7 +75,7 @@
             <h1 class="mb-0">Lúca
                 <span class="text-primary">Bruno</span>
             </h1>
-            <div class="subheading mb-5">7 Rue de Périgueux · 33700, Mérignac · 0768474018 ·
+            <div class="subheading mb-5">7 Rue de Périgueux · 33700, Mérignac · 07 68 47 40 18 ·
                 <a href="mailto:luca.bruno@ynov.com">luca.bruno@ynov.com</a>
             </div>
             <p class="lead mb-5">Bonjour je m'appelle Luca Bruno, j'ai <?php include ('info.php'); echo $mon_age; ?> ans, je suis passionné d'informatique, j'ai commencé mes études en 2018 chez Ynov Informatique à Bordeaux.</p>
