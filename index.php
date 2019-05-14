@@ -294,7 +294,7 @@
 <!-- Footer
   <div class="footer">
       <div class="container">
-          <p class="pull-left"><a href="https://khaelo.000webhostapp.com/">Bruno Lúca</a></p>
+          <p class="pull-left"><a href="lucabruno.fr">Bruno Lúca</a></p>
           <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
           <p class="text-center" id="realtime">Actuellement il y a <?php /*echo $user_nbr; ?> utilisateur<?php if($user_nbr != 1) {echo "s";} */?> sur le site.</p>
       </div>
