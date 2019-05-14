@@ -1,2 +1,3 @@
 .idea
-_indev
+node_modules
+config
