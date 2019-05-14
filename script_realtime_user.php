@@ -1,9 +1,11 @@
 <?php
-$bdd = new PDO('mysql:host=127.0.0.1; dbname=', '', '');
+
+require('config/config.php');
 
 $session_time = 15;
 $actual_time = date("U");
 $user_ip = $_SERVER['REMOTE_ADDR'];
+
 
 $req_ip_exist = $bdd->prepare('SELECT * FROM online WHERE  user_ip = ?');
 $req_ip_exist->execute(array($user_ip));
