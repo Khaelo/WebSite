@@ -12,7 +12,7 @@ if(isset($_POST['newspawn'])) {
             $error = "Le spawn a été créé.";
         }
         else {
-            $error = "Votre nom est trop long (max 25 caractères).";
+            $error_all = "Votre nom est trop long (max 25 caractères).";
         }
     } else {
         $error_all = "Tous les champs (*) doivent être complétés !";
