@@ -11,9 +11,9 @@ if(isset($_POST['sendmail'])){
         <html>
             <body>
                 <div align="center">
-                    <u>Nom de l\'expéditeur :</u>' . $_POST['nom'] . '<br />
-                    <u>Mail de l\'expéditeur :</u>' . $_POST['mail'] . '<br />
-                    <u>Site Web de l\'expéditeur :</u>' . $_POST['website'] . '<br />
+                    <u>Nom de l\'expediteur :</u>' . $_POST['nom'] . '<br />
+                    <u>Mail de l\'expediteur :</u>' . $_POST['mail'] . '<br />
+                    <u>Site Web de l\'expediteur :</u>' . $_POST['website'] . '<br />
                     <br />
                     ' . nl2br($_POST['message']) . '
                 </div>
@@ -21,7 +21,7 @@ if(isset($_POST['sendmail'])){
         </html>
         ';
 
-        mail("brunolucadu24@gmail.com", "CONTACT -BrunoLuca.fr", $message, $header);
+        mail("contact@lucabruno.fr", "CONTACT - LucaBruno.fr", $message, $header);
     }
     else
     {
