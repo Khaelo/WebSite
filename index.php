@@ -7,13 +7,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
-
     <title>Luca Bruno - Bienvenue sur mon CV en ligne !</title>
 
-    <meta name="description" content="Crazy developer, student at Ynov Bordeaux!">
-    <meta name="keywords" content="HTML,CSS,JavaScript,C,Python,CV,developer">
-    <meta name="author" content="Luca `Khaelo` Bruno">
+    <meta name="Content-Type" content="UTF-8">
+    <meta name="Content-Language" content="fr">
+    <meta name="title" content="Luca Bruno - Bienvenue sur mon CV en ligne !">
+    <meta name="Description" content="BRUNO Luca, 20 ans, etudiant en Informatique chez Ynov Informatique à Bordeaux.">
+    <meta name="Keywords" content="HTML CSS JavaScript C Python CV Développer Technicien BRUNO Réseaux Informatique Streaming Déploiement Captation Luca">
+    <meta name="Subject" content="Développement et Réseaux">
+    <meta name="Copyright" content="brunoluca.fr">
+    <meta name="Author" content="Luca `Khaelo` Bruno">
+    <meta name="Publisher" content="BRUNO Lúca">
+    <meta name="Category" content="resume">
+
+
     <meta name="robots" content="all">
+    <meta name="Rating" content="general">
+    <meta name="Distribution" content="global">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap core CSS -->
@@ -45,7 +55,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Lúca Bruno</span>
         <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Ma photo">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
