@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=127.0.0.1; dbname=', '', '');
+require "config.php";
 
 $reqid = $bdd->query('SELECT COUNT(id) as countid FROM spawn');
 $numberid = $reqid->fetch();

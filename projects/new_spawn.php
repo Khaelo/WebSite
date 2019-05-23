@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=127.0.0.1; dbname=', '', '');
+require "config.php";
 
 if(isset($_POST['newspawn'])) {
     $nom = htmlspecialchars($_POST['nom']);
@@ -12,7 +12,7 @@ if(isset($_POST['newspawn'])) {
             $error = "Le spawn a été créé.";
         }
         else {
-            $error_all = "Votre nom est trop long (max 25 caractères).";
+            $error = "Votre nom est trop long (max 25 caractères).";
         }
     } else {
         $error_all = "Tous les champs (*) doivent être complétés !";
@@ -27,13 +27,14 @@ if(isset($_POST['newspawn'])) {
     <title>TP2 - Créer un Spawn</title>
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <!-- Google Analytics -->
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140744017-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
+
         gtag('config', 'UA-140744017-1');
     </script>
 </head>
