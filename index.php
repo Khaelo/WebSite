@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
 
-    <title>Luca Bruno - Bienvenue</title>
+    <title>Luca Bruno - Bienvenue sur mon CV en ligne !</title>
 
     <meta name="description" content="Crazy developer, student at Ynov Bordeaux!">
     <meta name="keywords" content="HTML,CSS,JavaScript,C,Python,CV,developer">
