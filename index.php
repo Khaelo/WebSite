@@ -6,6 +6,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta property="og:image" content="img/profile.jpg" />
 
     <title>Luca Bruno - Bienvenue sur mon CV en ligne !</title>
 
