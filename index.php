@@ -297,11 +297,11 @@
             <form method="POST" action="#contact">
                 <div class="form-group col-md-6 ">
                 <label for="nom">Votre nom*</label>
-                <input class="input-group-text" type="text" name="nom" placeholder="Your Name" id="nom" required/>
+                <input class="input-group-text" type="text" name="nom" placeholder="Your Name" id="nom"/>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="mail">Votre Email*</label>
-                <input class="input-group-text" type="email" name="mail" placeholder="Your Email" id="mail" required/>
+                <input class="input-group-text" type="email" name="mail" placeholder="Your Email" id="mail"/>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="website">Votre site web (Optionnel)</label>
@@ -309,12 +309,12 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="message">Votre message*</label>
-                <textarea class="input-group-text" rows="3" name="message" placeholder="Your message" style="width:80%" id="message" required></textarea>
+                <textarea class="input-group-text" rows="3" name="message" placeholder="Your message" style="width:80%" id="message"></textarea>
                 </div>
                 <input type="submit" class="btn btn-lg btn-outline-primary" value="Submit" name="sendmail"/><br/>
                 <?php
                 if(isset($msg)) {
-                    echo $msg;
+                    echo "<p class='text-danger'>$msg</p>";
                 }
                 ?>
             </form>
@@ -326,8 +326,9 @@
 <!-- Footer -->
 <footer class="page-footer font-small blue">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div class="footer-copyright text-center py-3">© 2019 Copyright
         <a href="https://lucabruno.fr/"> LucaBruno.fr</a>
+        <p class="text-center">Réalisé à l'aide de <a href="https://startbootstrap.com/themes/resume/">Boostrap Resume</p></a>
         <p class="text-center" id="realtime">Actuellement il y a <?php echo $user_nbr; ?> utilisateur<?php if($user_nbr != 1) {echo "s";} ?> sur le site.</p>
     </div>
     <!-- Copyright -->
