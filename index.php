@@ -328,7 +328,7 @@
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright
         <a href="https://lucabruno.fr/"> LucaBruno.fr</a>
-        <p class="text-center">Réalisé à l'aide de <a href="https://startbootstrap.com/themes/resume/">Boostrap Resume</p></a>
+        <p class="text-center">Réalisé à l'aide de <a href="https://startbootstrap.com/themes/resume/" target="_blank">Boostrap Resume</p></a>
         <p class="text-center" id="realtime">Actuellement il y a <?php echo $user_nbr; ?> utilisateur<?php if($user_nbr != 1) {echo "s";} ?> sur le site.</p>
     </div>
     <!-- Copyright -->
