@@ -316,7 +316,7 @@ require "config/re_captcha.php";
                     <div class="g-recaptcha" data-sitekey="<?php echo SITE_KEY; ?>"></div>
                 </div>
                 <input type="submit" class="btn btn-lg btn-outline-primary" value="Submit" name="sendmail"/><br/>
-                <?php if(isset($msg)){echo "<br/><p class='text-secondary'>$msg</p>";}?>
+                <?php if(isset($success)){echo "<br/><p class='text-success'>$success</p>";} if(isset($msg)){echo "<br/><p class='text-danger'>$msg</p>";}?>
             </form>
         </div>
     </section>
