@@ -26,7 +26,7 @@ if(isset($_POST['sendmail'])){
         </html>
         ';
         mail("contact@lucabruno.fr", "CONTACT - LucaBruno.fr", $message, $header);
-        $msg = "Votre demande à bien été envoyé !";
+        $success = "Votre demande à bien été envoyé !";
     }else {
         $msg = "Tous les champs(*) doivent être complétés";
     }
