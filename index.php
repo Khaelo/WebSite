@@ -297,11 +297,11 @@
             <form method="POST" action="#contact">
                 <div class="form-group col-md-6 ">
                 <label for="nom">Votre nom*</label>
-                <input class="input-group-text" type="text" name="nom" placeholder="Your Name" id="nom"/>
+                <input class="input-group-text" type="text" name="nom" placeholder="Your Name" id="nom" required/>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="mail">Votre Email*</label>
-                <input class="input-group-text" type="email" name="mail" placeholder="Your Email" id="mail"/>
+                <input class="input-group-text" type="email" name="mail" placeholder="Your Email" id="mail" required/>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="website">Votre site web (Optionnel)</label>
@@ -309,7 +309,7 @@
                 </div>
                 <div class="form-group col-md-6">
                 <label for="message">Votre message*</label>
-                <textarea class="input-group-text" rows="3" name="message" placeholder="Your message" style="width:80%" id="message"></textarea>
+                <textarea class="input-group-text" rows="3" name="message" placeholder="Your message" style="width:80%" id="message" required></textarea>
                 </div>
                 <input type="submit" class="btn btn-lg btn-outline-primary" value="Submit" name="sendmail"/><br/>
                 <?php
