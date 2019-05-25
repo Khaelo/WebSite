@@ -44,7 +44,7 @@ include "random_spawn.php";
 <!-- Footer -->
 <footer class="page-footer font-small blue">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <div class="footer-copyright text-center py-3">© 2019 Copyright
         <a href="https://lucabruno.fr/"> LucaBruno.fr</a>
     </div>
     <!-- Copyright -->
