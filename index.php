@@ -1,4 +1,7 @@
-<?php include ("script_realtime_user.php"); ?>
+<?php
+require "script_realtime_user.php";
+require "config/re_captcha.php";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -38,7 +41,8 @@
     <!-- Custom styles -->
     <link href="css/resume.min.css" rel="stylesheet">
 
-    <!-- Google Analytics -->
+    <!-- Google -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140744017-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -291,9 +295,6 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
         <div class="w-100 form-group" align="center">
-            <?php
-            include ('mail.php');
-            ?>
             <form method="POST" action="#contact">
                 <div class="form-group col-md-6 ">
                 <label for="nom">Votre nom*</label>
@@ -311,12 +312,11 @@
                 <label for="message">Votre message*</label>
                 <textarea class="input-group-text" rows="3" name="message" placeholder="Your message" style="width:80%" id="message"></textarea>
                 </div>
+                <div class="form-group col-md-6">
+                    <div class="g-recaptcha" data-sitekey="<?php echo SITE_KEY; ?>"></div>
+                </div>
                 <input type="submit" class="btn btn-lg btn-outline-primary" value="Submit" name="sendmail"/><br/>
-                <?php
-                if(isset($msg)) {
-                    echo "<p class='text-danger'>$msg</p>";
-                }
-                ?>
+                <?php if(isset($msg)){echo "<br/><p class='text-secondary'>$msg</p>";}?>
             </form>
         </div>
     </section>
