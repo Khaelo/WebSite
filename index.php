@@ -1,6 +1,7 @@
 <?php
 require "script_realtime_user.php";
 require "config/re_captcha.php";
+require "get_info.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -39,7 +40,7 @@ require "config/re_captcha.php";
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 
     <!-- Google -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -103,18 +104,18 @@ require "config/re_captcha.php";
             <div class="subheading mb-5">7 Rue de Périgueux · 33700, Mérignac · 07 68 47 40 18 ·
                 <a href="mailto:luca.bruno@ynov.com">luca.bruno@ynov.com</a>
             </div>
-            <p class="lead mb-5">Bonjour je m'appelle Luca Bruno, j'ai <?php include ('info.php'); echo $mon_age; ?> ans, je suis passionné d'informatique, j'ai commencé mes études en 2018 chez Ynov Informatique à Bordeaux.</p>
+            <p class="lead mb-5"><?php echo $description['short']?></p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/l%C3%BAca-bruno/" target="_blank">
+                <a href="<?php echo $url['linkedin']?>" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/Khaelo" target="_blank">
+                <a href="<?php echo $url['github']?>" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/_Khaelo_" target="_blank">
+                <a href="<?php echo $url['twitter']?>" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="<?php echo $url['facebook']?>">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </div>
@@ -129,45 +130,45 @@ require "config/re_captcha.php";
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
-                    <h3 class="mb-0">Equipier polyvalent</h3>
-                    <div class="subheading mb-3">KFC</div>
-                    <p>Préparation alimentaire et prise de commandes.</p>
+                    <h3 class="mb-0"><?php echo $cv_1['poste']?></h3>
+                    <div class="subheading mb-3"><?php echo $cv_1['nom_entreprise']?></div>
+                    <p><?php echo $cv_1['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Juillet 2018 - Aujourd'hui</span>
+                    <span class="text-primary"><?php echo $cv_1['dates']?></span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
-                    <h3 class="mb-0">Technicien réseau</h3>
-                    <div class="subheading mb-3">Seekat</div>
-                    <p>Déploiement de réseaux spécifiques à l'évenementiel, streaming et captation vidéo.</p>
+                    <h3 class="mb-0"><?php echo $cv_2['poste']?></h3>
+                    <div class="subheading mb-3"><?php echo $cv_2['nom_entreprise']?></div>
+                    <p><?php echo $cv_2['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Juin 2017 - Janvier 2018</span>
+                    <span class="text-primary"><?php echo $cv_2['dates']?></span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
-                    <h3 class="mb-0">Technicien réseau (stage)</h3>
-                    <div class="subheading mb-3">Seekat</div>
-                    <p>Déploiement de réseaux spécifiques à l'évenementiel, streaming et captation vidéo.</p>
+                    <h3 class="mb-0"><?php echo $cv_3['poste']?></h3>
+                    <div class="subheading mb-3"><?php echo $cv_3['nom_entreprise']?></div>
+                    <p><?php echo $cv_3['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Janvier 2017 - Février 2017</span>
+                    <span class="text-primary"><?php echo $cv_3['dates']?></span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
                 <div class="resume-content">
-                    <h3 class="mb-0">Technicien réseau (stage)</h3>
-                    <div class="subheading mb-3">Servitec</div>
-                    <p>Déploiement de systèmes réseau et installation de serveurs.</p>
+                    <h3 class="mb-0"><?php echo $cv_4['poste']?></h3>
+                    <div class="subheading mb-3"><?php echo $cv_4['nom_entreprise']?></div>
+                    <p><?php echo $cv_4['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Mars 2016 - Avril 2016</span>
+                    <span class="text-primary"><?php echo $cv_4['dates']?></span>
                 </div>
             </div>
 
@@ -183,23 +184,23 @@ require "config/re_captcha.php";
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="resume-content">
-                    <h3 class="mb-0">Ynov Informatique</h3>
-                    <div class="subheading mb-3">Bachelor 1 - Informatique</div>
-                    <p>Formation en cours</p>
+                    <h3 class="mb-0"><?php echo $diplome_1['ecole']?></h3>
+                    <div class="subheading mb-3"><?php echo $diplome_1['nom_diplome']?></div>
+                    <p><?php echo $diplome_1['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Septembre 2018 - Aujourd'hui</span>
+                    <span class="text-primary"><?php echo $diplome_1['dates']?></span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
                 <div class="resume-content">
-                    <h3 class="mb-0">Prè de Cordy</h3>
-                    <div class="subheading mb-3">Bac Professionnel Systèmes  Électroniques et Numériques.</div>
-                    <p>Formation achevée (Bac obtenu)</p>
+                    <h3 class="mb-0"><?php echo $diplome_2['ecole']?></h3>
+                    <div class="subheading mb-3"><?php echo $diplome_2['nom_diplome']?></div>
+                    <p><?php echo $diplome_2['description']?></p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">Septembre 2015 - Juin 2017</span>
+                    <span class="text-primary"><?php echo $diplome_2['dates']?></span>
                 </div>
             </div>
 
@@ -266,8 +267,8 @@ require "config/re_captcha.php";
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
         <div class="w-100">
             <h2 class="mb-5">Interests</h2>
-            <p>En plus de suivre des études d'informatique, la plupart de mon temps, je voyage, je tente de nouvelles expériences, pendant l'été, j'aime les sorties entre amis, les balades à cheval, faire du canoë et de l'escalade..</p>
-            <p class="mb-0">Quand je suis forcé à être chez moi par le mauvais temps ou le froid, je regarde beaucoup de vidéo, séries et films, j'aime écouter de la musique (de tous les styles) et j'aime me détendre sur des jeux-vidéo, je vais aussi me documenter sur les nouvelles avancées technologique... </p>
+            <p><?php echo $description['longue_1']?></p>
+            <p class="mb-0"><?php echo $description['longue_2']?></p>
         </div>
     </section>
 
