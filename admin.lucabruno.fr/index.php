@@ -29,11 +29,11 @@ if(isset($_SESSION['id']) AND $_SESSION['mail']) {
 }else {
     ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 
     <meta charset="UTF-8">
-    <meta lang="fr">
+    <meta name="Content-Language" content="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
     <title>Administration - LucaBruno.fr</title>
